@@ -1,0 +1,33 @@
+.contact{
+    width: 100%;
+    padding: 20px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-content{
+    margin: 50px 15px;
+}
+
+.contact-content a{
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    margin: 0 15px;
+    background-color: #333;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact-content a:hover{
+    background-color: rgba(76, 0, 130, 0.788);
+}
+
+.contact-content i{
+    position: relative;
+    top: 11.5px;
+}
+

@@ -1,0 +1,41 @@
+
+.about ul{
+    padding: 0;
+    text-align: center;
+}
+
+.trigger{
+    list-style-type: none;
+    position: relative;
+    left: -15px;
+    padding: 10px;
+    background: #636363;
+    margin: 4px;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: ivory;
+    transition: transform 0.2s;
+}
+
+.trigger.active{
+    background: rgba(76, 0, 130, 0.788);
+}
+
+.trigger:hover{
+    transform: scale(1.1);
+}
+
+.content{
+    background: #333;
+    color: ivory;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: none;
+}
+
+.content.active{
+    display: block;
+}
