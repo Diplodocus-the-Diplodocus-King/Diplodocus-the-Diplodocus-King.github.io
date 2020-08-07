@@ -13,9 +13,11 @@
     box-shadow: 8px 0 8px rgba(0, 0, 0, 0.2);
     top: 0;
     left: 0;
-    background-color: rgba(76, 0, 130, 0.788);
+    background-color: #6c35a3;
     overflow: auto;
     text-align: center;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 .navbar li.nav{
@@ -79,6 +81,8 @@
     animation: spin-rev 0.2s ease-in forwards;
 }
 
+/* animation */
+
 @keyframes spin {
     0%{transform: rotateY(0deg)}
     100%{transform: rotateY(90deg)}
@@ -88,3 +92,11 @@
     0%{transform: rotateY(-90deg)}
     100%{transform: rotateY(0deg)}
   }
+
+/* media queries */
+
+@media screen and (max-width: 1000px){
+    .navbar{
+        display: none;
+    }
+}

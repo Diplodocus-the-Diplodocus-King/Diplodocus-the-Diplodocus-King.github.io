@@ -1,0 +1,49 @@
+.experience{
+    position: relative;
+    background-color: #333;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 5px 10px;
+    border-radius: 15px;
+    color: ivory;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.experience h2{
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: ivory;
+    font-size:  3.3vw;
+}
+
+.exp-card{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    padding: 15px 15px;
+    margin: 15px 0;
+    height: 100px;
+}
+
+.exp-card .iconify,.exp-card .fab{
+    display: inline;
+    font-size: 4.5vw;
+    color: ivory;
+    margin: 0 2px;
+}
+
+.exp-card p{
+    font-size: 1.5vw;
+}
+
+/* media queries */
+
+@media screen and (max-width: 700px){
+    .exp-card{
+
+        padding: 10px 10px;
+        margin: 10px 0;
+    }
+}

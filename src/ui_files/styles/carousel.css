@@ -79,7 +79,7 @@
 }
 
 .dot.active, .dot:hover{
-    background-color: #4c0082c9;
+    background-color: #6221a3;
 }
 
 .fade {
@@ -89,6 +89,8 @@
     animation-duration: 2s;
 }
 
+/* animation */
+
 @-webkit-keyframes fade {
     from {opacity: 0.4}
     to {opacity: 1}
@@ -97,4 +99,12 @@
 @keyframes fade {
     from {opacity: 0.4}
     to {opacity: 1}
+}
+
+/* media queries */
+
+@media screen and (max-width: 815px){
+    .caption{
+        font-size: 0.8em;
+    }
 }

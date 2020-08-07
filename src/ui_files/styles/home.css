@@ -1,0 +1,48 @@
+.home{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 5px 10px;
+    box-sizing: border-box;
+}
+
+.home h1{
+    position: relative;
+    color: #333;
+    font-size: 3em;
+    font-weight: 500;
+    margin: 2px;
+    left: 2000px;
+    animation: slide 0.7s ease 0s 1 forwards normal;
+}
+
+.home h2{
+    position: relative;
+    color: #6c35a3;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 5px;
+    left: 2000px;
+    animation: slide 1s ease 0s 1 forwards normal;
+}
+
+.home h3{
+    position: relative;
+    display: block;
+    text-align: left;
+    padding: 0;
+    color: #333;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 5px;
+    left: 2000px;
+    animation: slide 1.3s ease 0s 1 forwards normal;
+}
+
+/* animation */
+
+@keyframes slide {
+    0%{left: 2000px;}
+    100%{left: 0px;}
+}

@@ -2,16 +2,20 @@
 
 body{
     background-color: #f2f2f2;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    max-width: 100%;
+    width: 1650px;
+    box-sizing: border-box;
 }
 
 .main{
     left: 250px;
     top: 100px;
-    margin: 0 0 0 10px;
-    width: 1575px;
+    width: 100%;
     position: relative;
+    box-sizing: border-box;
 }
 
 h1, h2{
@@ -19,109 +23,16 @@ h1, h2{
 }
 
 hr{
-    margin: 10px 0;
-}
-
-.home{
-    height: 770px;
+    margin: 10px 10px;
     width: 100%;
-    padding: 20px 20px;
 }
 
-.home h1{
-    position: relative;
-    color: #333;
-    font-size: 3em;
-    font-weight: 500;
-    margin: 5px;
-    left: 2000px;
-    /* animation: slide 5s ease-in-out forwards; */
-    animation: slide 0.7s ease 0s 1 forwards normal;
-}
+/* media queries */
 
-.home h2{
-    position: relative;
-    color: rgba(76, 0, 130, 0.788);
-    font-size: 1.5em;
-    font-weight: 500;
-    margin: 5px;
-    left: 2000px;
-    animation: slide 1s ease 0s 1 forwards normal;
-}
-
-.home h3{
-    position: relative;
-    display: block;
-    text-align: left;
-    padding: 0;
-    color: #333;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 7px;
-    animation: slide 1.3s ease 0s 1 forwards normal;
-}
-
-.about{
-    background-color: #333;
-    width: 100%;
-    padding: 20px 20px;
-    border-radius: 15px;
-    color: ivory;
-}
-
-.about h2, h3{
-    padding: 10px 20px;
-    text-align: center;
-    font-weight: 500;
-}
-
-.about h4{
-    text-align: center;
-    font-weight: 500;
-}
-
-.projects{
-    width: 100%;
-    padding: 20px 20px;
-    text-align: center;
-    color: #333;
-}
-
-.experience{
-    background-color: #333;
-    width: 100%;
-    padding: 20px 20px;
-    border-radius: 15px;
-    color: ivory;
-    text-align: center;
-}
-
-.experience h2{
-    margin-bottom: 30px;
-    font-weight: 500;
-    color: ivory;
-}
-
-.exp-card{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 25%;
-    padding: 15px 15px;
-    margin: 15px 0;
-    height: 100px;
-}
-
-.exp-card .iconify,.exp-card .fab{
-    display: inline;
-    font-size: 3em;
-    color: ivory;
-    margin: 0 2px;
-}
-
-@keyframes slide {
-    0%{left: 2000px;}
-    100%{left: 0px;}
+@media screen and (max-width: 1000px){
+    .main{
+        left: 0;
+    }
 }
 
 

@@ -4,7 +4,10 @@ import Carousel from './ui_files/carousel';
 import Tooltip from './ui_files/tooltip';
 import Contacts from './ui_files/contact';
 import './ui_files/styles/main.css';
-import './ui_files/styles/cards.css';
+import './ui_files/styles/home.css';
+import './ui_files/styles/about.css';
+import './ui_files/styles/projects.css';
+import './ui_files/styles/experience.css';
 
 // create navbar
 const navbar = new Navbar();

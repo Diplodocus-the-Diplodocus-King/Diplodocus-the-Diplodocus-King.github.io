@@ -3,6 +3,10 @@
     padding: 20px 20px;
     text-align: center;
     color: #333;
+    box-sizing: border-box;
+}
+.contact h2{
+    font-size: 3.3vw;
 }
 
 .contact-content{
@@ -23,7 +27,7 @@
 }
 
 .contact-content a:hover{
-    background-color: rgba(76, 0, 130, 0.788);
+    background-color:#6c35a3;
 }
 
 .contact-content i{
@@ -31,3 +35,32 @@
     top: 11.5px;
 }
 
+.contact-display{
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #333;
+    margin: 25px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 750px){
+    .contact-content a{
+        height: 45px;
+        width: 45px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact-content a{
+        height: 35px;
+        width: 35px;
+        margin: 0 5px;
+        font-size: 10px;
+    }
+
+    .contact-content i{
+        top: 8px;
+    }
+}
