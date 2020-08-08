@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is the link to the bootstrap styles for css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Diplodocus Weather</title>
+</head>
+<body>
+    <div class="container my-5 mx-auto">
+
+        <h1 class="text-muted text-center my-4">Diplodocus Weather</h1>
+
+        <form class="change-location my-4 text-center text-muted">
+            <label for="city">Enter a location for weather information</label>   
+            <input type="text" name="city" class="form-control p-4">
+        </form>
+
+        <div class="card shadow-lg rounded d-none">
+            <!-- This is a link to the placeholder image website -->
+            <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+            <div class="icon bg-light mx-auto text-centre">
+                <img src="" alt="">
+            </div>
+            <div class="text-muted text-uppercase text-center details">
+                <h5 class="my-3">City Name</h5>
+                <div class="my-3">Weather Condition</div>
+                <div class="display-4 my-4">
+                    <span>Temp</span>
+                    <!-- Here &deg; is a key word to get the degree symbol -->
+                    <span>&deg;C</span> 
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- note it is important to make a call to forcast.js before app.js as app.js makes a call to forcast.js therefore we need those functions defined before making the call -->
+    <script src="scripts/forcast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

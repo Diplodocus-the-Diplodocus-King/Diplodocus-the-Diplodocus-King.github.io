@@ -14,7 +14,7 @@
     border-radius: 15px;
     padding: 5px 0;
     position: absolute;
-    bottom: -30px;
+    bottom: 60px;
     left: 0;
     transition: opacity 0.3s;
 }
@@ -27,11 +27,11 @@
 .tip::after{
     content: "";
     position: absolute;
-    bottom: 100%;
+    bottom: -8px;
     left: 50%;
     margin-left: -4px;
     border-width: 4px;
-    transform: rotateZ(180deg);
+    transform: rotateZ(0deg);
     border-style: solid;
     border-color: transparent;
     border-top-color: rgba(98, 33, 163, 0.8);
