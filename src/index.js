@@ -9,6 +9,9 @@ import './ui_files/styles/about.css';
 import './ui_files/styles/projects.css';
 import './ui_files/styles/experience.css';
 
+const aboutCont = document.querySelector('#background');
+console.log(aboutCont.style.fontSize);
+
 // create navbar
 const navbar = new Navbar();
 navbar.init();

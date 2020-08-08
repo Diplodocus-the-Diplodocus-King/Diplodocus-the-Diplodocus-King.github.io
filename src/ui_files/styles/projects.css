@@ -84,6 +84,18 @@
 }
 
 /* media queries */
+@media screen and (min-width: 1200px){
+    .projects h2{
+        font-size: 39.6px !important;
+    }
+}       
+
+@media screen and (max-width: 800px){
+    .projects h2{
+        font-size: 24px !important;
+    }
+}
+
 @media screen and (max-width: 815px){
     .card{
         width: 150px;

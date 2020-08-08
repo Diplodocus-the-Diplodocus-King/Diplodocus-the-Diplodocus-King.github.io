@@ -34,6 +34,8 @@
     padding: 10px 20px;
     border-radius: 6px;
     display: none;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .content.active{
@@ -41,6 +43,18 @@
 }
 
 /* media queries */
+
+@media screen and (min-width: 1200px){
+    .content{
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .content{
+        font-size: 12px !important;
+    }
+}
 
 @media screen and (max-width: 700px){
     .trigger{

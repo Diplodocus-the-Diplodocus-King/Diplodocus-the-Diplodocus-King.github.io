@@ -51,7 +51,7 @@
 .caption {
     color: #f2f2f2;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.5vw;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -103,8 +103,21 @@
 
 /* media queries */
 
-@media screen and (max-width: 815px){
+@media screen and (min-width: 1200px){
     .caption{
-        font-size: 0.8em;
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .caption{
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .dot{
+        height: 10px;
+        width: 10px;
     }
 }
