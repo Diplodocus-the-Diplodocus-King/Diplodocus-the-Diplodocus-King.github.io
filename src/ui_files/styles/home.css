@@ -49,7 +49,7 @@
     left: -105px;
     height: 100px;
     width: 75px;
-    animation: balloon1 290s linear 0s 1 forwards normal;
+    animation: balloon1 290s linear 0s 1 normal none;
 }
 
 #b2{
@@ -58,7 +58,7 @@
     left: -205px;
     height: 100px;
     width: 75px;
-    animation: balloon2 240s linear 7s 1 forwards normal;
+    animation: balloon2 240s linear 7s 1 normal none;
 }
 
 #b3{
@@ -67,7 +67,7 @@
     left: -305px;
     height: 100px;
     width: 75px;
-    animation: balloon3 340s linear 14s 1 forwards normal;
+    animation: balloon3 340s linear 14s 1 normal none;
 }
 
 #b4{
@@ -76,7 +76,7 @@
     left: -405px;
     height: 100px;
     width: 75px;
-    animation: balloon4 300s linear 21s 1 forwards normal;
+    animation: balloon4 300s linear 21s 1 normal none;
 }
 
 #b5{
@@ -85,7 +85,7 @@
     left: -505px;
     height: 100px;
     width: 75px;
-    animation: balloon5 380s linear 28s 1 forwards normal;
+    animation: balloon5 380s linear 28s 1 normal none;
 }
 
 #b6{
@@ -94,7 +94,7 @@
     left: -605px;
     height: 100px;
     width: 75px;
-    animation: balloon6 250s linear 35s 1 forwards normal;
+    animation: balloon6 250s linear 35s 1 normal none;
 }
 
 #b7{
@@ -103,7 +103,7 @@
     left: -705px;
     height: 100px;
     width: 75px;
-    animation: balloon7 390s linear 42s 1 forwards normal;
+    animation: balloon7 390s linear 42s 1 normal none;
 }
 
 #b8{
@@ -112,7 +112,7 @@
     left: -805px;
     height: 100px;
     width: 75px;
-    animation: balloon8 350s linear 49s 1 forwards normal;
+    animation: balloon8 350s linear 49s 1 normal none;
 }
 
 /* animation */
