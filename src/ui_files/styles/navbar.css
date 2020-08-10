@@ -33,7 +33,13 @@
     transition: transform 0.2s;
 }
 
+.profile{
+    height: 170px;
+}
+
 .profile img{
+    position: relative;
+    top: 10px;
     color: white;
     cursor: pointer;
     transition: transform 0.2s;

@@ -1,6 +1,6 @@
 .home{
     position: relative;
-    height: 800px;
+    height: 810px;
     width: auto;
     padding: 20px 20px;
     margin: 5px 10px;
@@ -14,6 +14,7 @@
     font-weight: 500;
     margin: 2px;
     left: 2000px;
+    top: 35px;
     animation: slide 0.7s ease 0s 1 forwards normal;
 }
 
@@ -23,6 +24,7 @@
     font-size: 1.5em;
     font-weight: 500;
     margin: 5px;
+    top: 35px;
     left: 2000px;
     animation: slide 1s ease 0s 1 forwards normal;
 }
@@ -36,8 +38,81 @@
     font-size: 1em;
     font-weight: 500;
     margin: 5px;
+    top: 35px;
     left: 2000px;
     animation: slide 1.3s ease 0s 1 forwards normal;
+}
+
+#b1{
+    position: absolute;
+    top: 600px;
+    left: -105px;
+    height: 100px;
+    width: 75px;
+    animation: balloon1 290s linear 0s 1 forwards normal;
+}
+
+#b2{
+    position: absolute;
+    top: 600px;
+    left: -105px;
+    height: 100px;
+    width: 75px;
+    animation: balloon2 240s linear 7s 1 forwards normal;
+}
+
+#b3{
+    position: absolute;
+    top: 600px;
+    left: -105px;
+    height: 100px;
+    width: 75px;
+    animation: balloon3 340s linear 14s 1 forwards normal;
+}
+
+#b4{
+    position: absolute;
+    top: 600px;
+    left: -105px;
+    height: 100px;
+    width: 75px;
+    animation: balloon4 300s linear 21s 1 forwards normal;
+}
+
+#b5{
+    position: absolute;
+    top: 600px;
+    left: -105px;
+    height: 100px;
+    width: 75px;
+    animation: balloon5 380s linear 28s 1 forwards normal;
+}
+
+#b6{
+    position: absolute;
+    top: 600px;
+    left: -105px;
+    height: 100px;
+    width: 75px;
+    animation: balloon6 250s linear 35s 1 forwards normal;
+}
+
+#b7{
+    position: absolute;
+    top: 600px;
+    left: -105px;
+    height: 100px;
+    width: 75px;
+    animation: balloon7 390s linear 42s 1 forwards normal;
+}
+
+#b8{
+    position: absolute;
+    top: 600px;
+    left: -105px;
+    height: 100px;
+    width: 75px;
+    animation: balloon8 350s linear 49s 1 forwards normal;
 }
 
 /* animation */
@@ -45,4 +120,204 @@
 @keyframes slide {
     0%{left: 2000px;}
     100%{left: 0px;}
+}
+
+@keyframes balloon1 {
+    0%{left: -105px; opacity: 1;}
+    5%{left: 100px; top: 570px; opacity: 1;}
+    10%{left: 200px; top: 590px; opacity: 1;}
+    15%{left: 300px; top: 530px; opacity: 1;}
+    20%{left: 400px; top: 550px; opacity: 1;}
+    25%{left: 500px; top: 480px; opacity: 1;}
+    30%{left: 600px; top: 500px; opacity: 1;}
+    35%{left: 700px; top: 420px; opacity: 1;}
+    40%{left: 800px; top: 440px; opacity: 1;}
+    45%{left: 900px; top: 350px; opacity: 1;}
+    50%{left: 1000px; top: 370px; opacity: 1;}
+    55%{left: 1100px; top: 270px; opacity: 1;}
+    60%{left: 1200px; top: 290px; opacity: 1;}
+    65%{left: 1300px; top: 180px; opacity: 1;}
+    70%{left: 1400px; top: 200px; opacity: 1;}
+    75%{left: 1500px; top: 80px; opacity: 1;}
+    80%{left: 1600px; top: 100px; opacity: 1;}
+    85%{left: 1700px; top: -30px; opacity: 1;}
+    90%{left: 1800px; top: -10px; opacity: 1;}
+    95%{left: 1900px; top: -150px; opacity: 1;}
+    100%{left: 2000px; top: -130px; opacity: 0;}
+}
+
+@keyframes balloon2 {
+    0%{left: -105px; opacity: 1;}
+    5%{left: 100px; top: 580px; opacity: 1;}
+    10%{left: 200px; top: 600px; opacity: 1;}
+    15%{left: 300px; top: 550px; opacity: 1;}
+    20%{left: 400px; top: 570px; opacity: 1;}
+    25%{left: 500px; top: 510px; opacity: 1;}
+    30%{left: 600px; top: 530px; opacity: 1;}
+    35%{left: 700px; top: 460px; opacity: 1;}
+    40%{left: 800px; top: 480px; opacity: 1;}
+    45%{left: 900px; top: 400px; opacity: 1;}
+    50%{left: 1000px; top: 420px; opacity: 1;}
+    55%{left: 1100px; top: 330px; opacity: 1;}
+    60%{left: 1200px; top: 350px; opacity: 1;}
+    65%{left: 1300px; top: 250px; opacity: 1;}
+    70%{left: 1400px; top: 270px; opacity: 1;}
+    75%{left: 1500px; top: 160px; opacity: 1;}
+    80%{left: 1600px; top: 180px; opacity: 1;}
+    85%{left: 1700px; top: 60px; opacity: 1;}
+    90%{left: 1800px; top: 80px; opacity: 1;}
+    95%{left: 1900px; top: -50px; opacity: 1;} 
+    100%{left: 2000px; top: -30px; opacity: 0;}
+}
+
+@keyframes balloon3 {
+    0%{left: -105px; opacity: 1;}
+    5%{left: 100px; top: 560px; opacity: 1;}
+    10%{left: 200px; top: 580px; opacity: 1;}
+    15%{left: 300px; top: 510px; opacity: 1;}
+    20%{left: 400px; top: 530px; opacity: 1;}
+    25%{left: 500px; top: 450px; opacity: 1;}
+    30%{left: 600px; top: 470px; opacity: 1;}
+    35%{left: 700px; top: 380px; opacity: 1;}
+    40%{left: 800px; top: 400px; opacity: 1;}
+    45%{left: 900px; top: 300px; opacity: 1;}
+    50%{left: 1000px; top: 320px; opacity: 1;}
+    55%{left: 1100px; top: 210px; opacity: 1;}
+    60%{left: 1200px; top: 230px; opacity: 1;}
+    65%{left: 1300px; top: 110px; opacity: 1;}
+    70%{left: 1400px; top: 130px; opacity: 1;}
+    75%{left: 1500px; top: 0px; opacity: 1;}
+    80%{left: 1600px; top: 20px; opacity: 1;}
+    85%{left: 1700px; top: -110px; opacity: 1;}
+    90%{left: 1800px; top: -90px; opacity: 1;}
+    95%{left: 1900px; top: -230px; opacity: 1;}
+    100%{left: 2000px; top: -210px; opacity: 0;}
+}
+
+@keyframes balloon4 {
+    0%{left: -105px; opacity: 1;}
+    5%{left: 100px; top: 575px; opacity: 1;}
+    10%{left: 200px; top: 595px; opacity: 1;}
+    15%{left: 300px; top: 535px; opacity: 1;}
+    20%{left: 400px; top: 555px; opacity: 1;}
+    25%{left: 500px; top: 485px; opacity: 1;}
+    30%{left: 600px; top: 505px; opacity: 1;}
+    35%{left: 700px; top: 425px; opacity: 1;}
+    40%{left: 800px; top: 445px; opacity: 1;}
+    45%{left: 900px; top: 355px; opacity: 1;}
+    50%{left: 1000px; top: 375px; opacity: 1;}
+    55%{left: 1100px; top: 275px; opacity: 1;}
+    60%{left: 1200px; top: 295px; opacity: 1;}
+    65%{left: 1300px; top: 185px; opacity: 1;}
+    70%{left: 1400px; top: 205px; opacity: 1;}
+    75%{left: 1500px; top: 85px; opacity: 1;}
+    80%{left: 1600px; top: 105px; opacity: 1;}
+    85%{left: 1700px; top: -25px; opacity: 1;}
+    90%{left: 1800px; top: -5px; opacity: 1;}
+    95%{left: 1900px; top: -145px; opacity: 1;}
+    100%{left: 2000px; top: -125px; opacity: 0;}
+}
+
+@keyframes balloon5 {
+    0%{left: -105px; opacity: 1;}
+    5%{left: 100px; top: 550px; opacity: 1;}
+    10%{left: 200px; top: 570px; opacity: 1;}
+    15%{left: 300px; top: 490px; opacity: 1;}
+    20%{left: 400px; top: 510px; opacity: 1;}
+    25%{left: 500px; top: 420px; opacity: 1;}
+    30%{left: 600px; top: 440px; opacity: 1;}
+    35%{left: 700px; top: 340px; opacity: 1;}
+    40%{left: 800px; top: 360px; opacity: 1;}
+    45%{left: 900px; top: 250px; opacity: 1;}
+    50%{left: 1000px; top: 270px; opacity: 1;}
+    55%{left: 1100px; top: 150px; opacity: 1;}
+    60%{left: 1200px; top: 170px; opacity: 1;}
+    65%{left: 1300px; top: 40px; opacity: 1;}
+    70%{left: 1400px; top: 60px; opacity: 1;}
+    75%{left: 1500px; top: -80px; opacity: 1;}
+    80%{left: 1600px; top: -60px; opacity: 1;}
+    85%{left: 1700px; top: -210px; opacity: 1;}
+    90%{left: 1800px; top: -190px; opacity: 1;}
+    95%{left: 1900px; top: -350px; opacity: 1;}
+    100%{left: 2000px; top: -330px; opacity: 0;}
+}
+
+@keyframes balloon6 {
+    0%{left: -105px; opacity: 1;}
+    5%{left: 100px; top: 585px; opacity: 1;}
+    10%{left: 200px; top: 605px; opacity: 1;}
+    15%{left: 300px; top: 555px; opacity: 1;}
+    20%{left: 400px; top: 575px; opacity: 1;}
+    25%{left: 500px; top: 515px; opacity: 1;}
+    30%{left: 600px; top: 535px; opacity: 1;}
+    35%{left: 700px; top: 465px; opacity: 1;}
+    40%{left: 800px; top: 485px; opacity: 1;}
+    45%{left: 900px; top: 405px; opacity: 1;}
+    50%{left: 1000px; top: 425px; opacity: 1;}
+    55%{left: 1100px; top: 335px; opacity: 1;}
+    60%{left: 1200px; top: 355px; opacity: 1;}
+    65%{left: 1300px; top: 255px; opacity: 1;}
+    70%{left: 1400px; top: 275px; opacity: 1;}
+    75%{left: 1500px; top: 165px; opacity: 1;}
+    80%{left: 1600px; top: 185px; opacity: 1;}
+    85%{left: 1700px; top: 65px; opacity: 1;}
+    90%{left: 1800px; top: 85px; opacity: 1;}
+    95%{left: 1900px; top: -45px; opacity: 1;} 
+    100%{left: 2000px; top: -25px; opacity: 0;}
+}
+
+@keyframes balloon7 {
+    0%{left: -105px; opacity: 1;}
+    5%{left: 100px; top: 555px; opacity: 1;}
+    10%{left: 200px; top: 575px; opacity: 1;}
+    15%{left: 300px; top: 495px; opacity: 1;}
+    20%{left: 400px; top: 515px; opacity: 1;}
+    25%{left: 500px; top: 425px; opacity: 1;}
+    30%{left: 600px; top: 445px; opacity: 1;}
+    35%{left: 700px; top: 345px; opacity: 1;}
+    40%{left: 800px; top: 365px; opacity: 1;}
+    45%{left: 900px; top: 255px; opacity: 1;}
+    50%{left: 1000px; top: 275px; opacity: 1;}
+    55%{left: 1100px; top: 155px; opacity: 1;}
+    60%{left: 1200px; top: 175px; opacity: 1;}
+    65%{left: 1300px; top: 45px; opacity: 1;}
+    70%{left: 1400px; top: 65px; opacity: 1;}
+    75%{left: 1500px; top: -75px; opacity: 1;}
+    80%{left: 1600px; top: -55px; opacity: 1;}
+    85%{left: 1700px; top: -205px; opacity: 1;}
+    90%{left: 1800px; top: -185px; opacity: 1;}
+    95%{left: 1900px; top: -345px; opacity: 1;}
+    100%{left: 2000px; top: -325px; opacity: 0;}
+}
+
+@keyframes balloon8 {
+    0%{left: -105px; opacity: 1;}
+    5%{left: 100px; top: 565px; opacity: 1;}
+    10%{left: 200px; top: 585px; opacity: 1;}
+    15%{left: 300px; top: 515px; opacity: 1;}
+    20%{left: 400px; top: 535px; opacity: 1;}
+    25%{left: 500px; top: 455px; opacity: 1;}
+    30%{left: 600px; top: 475px; opacity: 1;}
+    35%{left: 700px; top: 385px; opacity: 1;}
+    40%{left: 800px; top: 405px; opacity: 1;}
+    45%{left: 900px; top: 305px; opacity: 1;}
+    50%{left: 1000px; top: 325px; opacity: 1;}
+    55%{left: 1100px; top: 215px; opacity: 1;}
+    60%{left: 1200px; top: 235px; opacity: 1;}
+    65%{left: 1300px; top: 115px; opacity: 1;}
+    70%{left: 1400px; top: 135px; opacity: 1;}
+    75%{left: 1500px; top: 5px; opacity: 1;}
+    80%{left: 1600px; top: 25px; opacity: 1;}
+    85%{left: 1700px; top: -105px; opacity: 1;}
+    90%{left: 1800px; top: -85px; opacity: 1;}
+    95%{left: 1900px; top: -225px; opacity: 1;}
+    100%{left: 2000px; top: -205px; opacity: 0;}
+}
+
+/* media queries */
+
+@media screen and (max-width: 1000px){
+    .home img{
+        display: none;
+    }
 }
