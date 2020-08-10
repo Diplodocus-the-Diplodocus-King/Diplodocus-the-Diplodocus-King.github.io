@@ -44,8 +44,8 @@
 }
 
 #b1{
-    position: absolute;
-    top: 600px;
+    position: relative;
+    top: 500px;
     left: -105px;
     height: 100px;
     width: 75px;
@@ -53,63 +53,63 @@
 }
 
 #b2{
-    position: absolute;
-    top: 600px;
-    left: -105px;
+    position: relative;
+    top: 500px;
+    left: -205px;
     height: 100px;
     width: 75px;
     animation: balloon2 240s linear 7s 1 forwards normal;
 }
 
 #b3{
-    position: absolute;
-    top: 600px;
-    left: -105px;
+    position: relative;
+    top: 500px;
+    left: -305px;
     height: 100px;
     width: 75px;
     animation: balloon3 340s linear 14s 1 forwards normal;
 }
 
 #b4{
-    position: absolute;
-    top: 600px;
-    left: -105px;
+    position: relative;
+    top: 500px;
+    left: -405px;
     height: 100px;
     width: 75px;
     animation: balloon4 300s linear 21s 1 forwards normal;
 }
 
 #b5{
-    position: absolute;
-    top: 600px;
-    left: -105px;
+    position: relative;
+    top: 500px;
+    left: -505px;
     height: 100px;
     width: 75px;
     animation: balloon5 380s linear 28s 1 forwards normal;
 }
 
 #b6{
-    position: absolute;
-    top: 600px;
-    left: -105px;
+    position: relative;
+    top: 500px;
+    left: -605px;
     height: 100px;
     width: 75px;
     animation: balloon6 250s linear 35s 1 forwards normal;
 }
 
 #b7{
-    position: absolute;
-    top: 600px;
-    left: -105px;
+    position: relative;
+    top: 500px;
+    left: -705px;
     height: 100px;
     width: 75px;
     animation: balloon7 390s linear 42s 1 forwards normal;
 }
 
 #b8{
-    position: absolute;
-    top: 600px;
-    left: -105px;
+    position: relative;
+    top: 500px;
+    left: -805px;
     height: 100px;
     width: 75px;
     animation: balloon8 350s linear 49s 1 forwards normal;
