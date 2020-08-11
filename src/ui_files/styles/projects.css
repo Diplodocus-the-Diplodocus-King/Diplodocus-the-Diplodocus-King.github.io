@@ -146,3 +146,54 @@
     }
 
 }
+
+@media screen and (max-width: 375px){
+    .card{
+        width: 250px;
+        height: 400px;
+    }
+
+    .card img{
+        height: 200px;
+    }
+
+    .card-container{
+        height: 200px;
+    }
+
+    .card-container h4{
+        font-size: 1em;
+        height: auto;
+    }
+
+    .card-container h5{
+        display: block;
+    }
+
+    .card-container p{
+        font-size: 1em;
+        margin: auto;
+    }
+
+    .project-links{
+        top: 40px;
+    }
+
+    .project-btn{
+        padding: 8px;
+        margin: 0 5px;
+    }
+
+    .project-btn a{
+        font-size: 1em;
+    }
+
+    .project-links div:last-child{
+        padding: 8px 8px;
+    }
+
+    .project-btn span{
+        display: inline;
+    }
+
+}
