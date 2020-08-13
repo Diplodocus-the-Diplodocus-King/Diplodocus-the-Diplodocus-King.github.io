@@ -10,6 +10,7 @@ class Navbar{
         this.projects = document.querySelector('.projects');
         this.experience = document.querySelector('.experience');
         this.contact = document.querySelector('.contact');
+        this.scroll = document.querySelector('.scroll-container');
     }
     init(){
         // create event listeners for each link and set scroll callback function
@@ -18,7 +19,6 @@ class Navbar{
             if(link.classList.contains('nav')){
                 link.addEventListener('click', () => {
                     const section = document.querySelector(link.getAttribute('data-target'));
-                    const currentPos = self.pageYOffset;
                     const scrollOptions = {
                         top: section.offsetTop,
                         left: 0,
@@ -87,7 +87,17 @@ class Navbar{
             this.profileBack.classList.remove('spin-rev');
             this.profileBack.classList.add('spin');
             this.profile.classList.add('spin-rev');
-        });       
+        }); 
+        
+        // click event on scroll down animation
+        this.scroll.addEventListener('click', () => {
+            const scrollOptions = {
+                top: this.about.offsetTop,
+                left: 0,
+                behavior: 'smooth'
+            };   
+            window.scrollTo(scrollOptions);
+        });
     }
     currentActive(){
 

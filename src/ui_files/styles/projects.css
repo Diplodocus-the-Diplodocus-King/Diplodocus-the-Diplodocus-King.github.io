@@ -74,6 +74,10 @@
     margin: 0 5px;
 }
 
+.only{
+    left: 60px;
+}
+
 .project-btn:hover{
     background-color:#333;
 }
@@ -137,6 +141,10 @@
         font-size: 1em;
     }
 
+    .only{
+        left: 30px;
+    }
+
     .project-links div:last-child{
         padding: 6px 8px;
     }
@@ -186,6 +194,10 @@
 
     .project-btn a{
         font-size: 1em;
+    }
+
+    .only{
+        left: 60px;
     }
 
     .project-links div:last-child{
