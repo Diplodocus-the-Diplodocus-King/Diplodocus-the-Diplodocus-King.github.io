@@ -48,7 +48,7 @@
 .scroll-container{
     position: relative;
     left: 49.125%;
-    top: 430px;
+    top: calc(95vh - 430px);
     width: 24px;
     height: 24px;
     cursor: pointer;
