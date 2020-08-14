@@ -11,6 +11,8 @@ class Navbar{
         this.experience = document.querySelector('.experience');
         this.contact = document.querySelector('.contact');
         this.scroll = document.querySelector('.scroll-container');
+        this.height = document.documentElement.clientHeight;
+        this.scrollBar = document.querySelector('.scroll-container');
     }
     init(){
         // create event listeners for each link and set scroll callback function
@@ -73,6 +75,9 @@ class Navbar{
                     }
                 });
             }
+            if(self.pageYOffset >= 935){
+                this.scrollBar.classList.remove('scroll-active');
+            }
         });
   
         // create click event on profile picture
@@ -89,6 +94,24 @@ class Navbar{
             this.profile.classList.add('spin-rev');
         }); 
         
+        // position scroll icon
+        if(this.height >= 935){
+            this.scrollBar.style.top = '430px';
+        } else if(this.height <= 570){
+            this.scrollBar.style.top = '70px';
+        } else{
+            const scrollPos = 70 + (360*((this.height-570)/(935-570)));
+            this.scrollBar.style.top = `${scrollPos}px`;
+        }
+
+        // delay showing of scroll icon
+        setTimeout(() => {
+            if(self.pageYOffset < 935){
+                this.scrollBar.classList.add('scroll-active');
+                console.log(self.pageYOffset);
+            }
+        }, 3000);
+
         // click event on scroll down animation
         this.scroll.addEventListener('click', () => {
             const scrollOptions = {
@@ -97,10 +120,8 @@ class Navbar{
                 behavior: 'smooth'
             };   
             window.scrollTo(scrollOptions);
+            this.scrollBar.classList.remove('scroll-active');
         });
-    }
-    currentActive(){
-
     }
 }
 

@@ -46,12 +46,16 @@
 /* scroll icon */
 
 .scroll-container{
+    display: none;
     position: relative;
     left: 49.125%;
-    top: calc(100vh - 560px);
     width: 24px;
     height: 24px;
     cursor: pointer;
+}
+
+.scroll-active{
+    display: block;
 }
 
 .scroll-container span{
