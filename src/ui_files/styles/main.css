@@ -33,6 +33,20 @@ hr{
 @media screen and (max-width: 1000px){
     .main{
         left: 0;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .main{
+        top: 25px;
+    }
+}
+
+@media screen and (max-width: 393px){
+    .main{
+
+        top: 0px;
     }
 }
 
