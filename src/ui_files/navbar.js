@@ -98,9 +98,9 @@ class Navbar{
         if(this.height >= 935){
             this.scrollBar.style.top = '430px';
         } else if(this.height <= 570){
-            this.scrollBar.style.top = '170px';
+            this.scrollBar.style.top = '140px';
         } else{
-            const scrollPos = 170 + (260*((this.height-570)/(935-570)));
+            const scrollPos = 140 + (290*((this.height-570)/(935-570)));
             this.scrollBar.style.top = `${scrollPos}px`;
         }
 
