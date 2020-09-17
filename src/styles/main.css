@@ -67,6 +67,8 @@ hr{
 
 .preview-img{
     border-radius: 0 0 5px 5px;
+    position: relative;
+    top: -5px;
 }
 
 .chip-container{
@@ -184,4 +186,8 @@ footer li{
 
 strong{
     font-weight: bold;
+}
+
+.info-window a:link{
+    background-color: transparent;
 }

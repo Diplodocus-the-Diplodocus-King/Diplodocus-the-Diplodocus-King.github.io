@@ -205,13 +205,14 @@ class Projects{
                     'python', 'cyan',
                     'qt', 'pink',
                     'bootstrap', 'purple',
-                    'babel', 'brown'
+                    'babel', 'brown',
+                    'materialize', 'teal'
                 ]; 
                 
                 project.chips.forEach(chip => {
                     
                     const chipColour = chipColourArray[chipColourArray.indexOf(chip)+1];
-
+                    
                     this.chipContainer.innerHTML += `<div class="chip z-depth-1 ${chipColour}">${chip}</div>`;
                 });
             }
