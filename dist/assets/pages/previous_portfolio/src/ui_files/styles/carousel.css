@@ -1,0 +1,123 @@
+.carousel{
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.carousel img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 6px 6px 0;
+    user-select: none;
+    text-decoration: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 6px 0 0 6px;
+    user-select: none;
+    text-decoration: none;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption {
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.number-text{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active, .dot:hover{
+    background-color: #6221a3;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+/* animation */
+
+@-webkit-keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+/* media queries */
+
+@media screen and (min-width: 1200px){
+    .caption{
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .caption{
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .dot{
+        height: 10px;
+        width: 10px;
+    }
+}

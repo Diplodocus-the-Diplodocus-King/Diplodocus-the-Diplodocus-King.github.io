@@ -1,0 +1,72 @@
+.experience{
+    position: relative;
+    background-color: #333;
+    width: auto;
+    padding: 20px 20px;
+    margin: 5px 10px;
+    border-radius: 15px;
+    color: ivory;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.experience h2{
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: ivory;
+    font-size:  3.3vw;
+}
+
+.exp-card{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    padding: 15px 15px;
+    margin: 15px 0;
+    height: 150px;
+}
+
+.exp-card .iconify,.exp-card .fab{
+    display: inline;
+    font-size: 4.5vw;
+    color: ivory;
+    margin: 0 2px;
+}
+
+.exp-card p{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.5vw;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1200px){
+    .experience h2{
+        font-size: 39.6px;
+    }
+
+    .exp-card .iconify,.exp-card .fab{
+        font-size: 54px;
+    }
+
+    .exp-card p{
+        font-size: 18px;
+    }
+}  
+
+@media screen and (max-width: 800px){
+    .experience h2{
+        font-size: 24px;
+    }
+
+    .exp-card .iconify,.exp-card .fab{
+        font-size: 36px;
+    }
+
+    .exp-card p{
+        font-size: 12px;
+    }
+}
