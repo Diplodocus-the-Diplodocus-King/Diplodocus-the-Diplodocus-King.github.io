@@ -1,0 +1,342 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <title>Julia Lagoutte</title>
+
+    <style>
+        header{
+            background: url(dist/assets/img/header.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+        }
+
+        @media screen and (max-width: 670px){
+            header{
+                min-height: 500px;
+            }
+        }
+
+        li a{
+            font-weight: bold;
+        }
+
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator{
+      background-color: #00c853;
+    }
+
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+
+    .connect a{
+        margin: 50px 5px
+    }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper grey darken-4">
+            <div class="container">
+                <a href="#" class="brand-logo">Julia Lagoutte</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#interviews">Interviews</a></li>
+                <li><a href="#podcasts">Podcasts</a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small green accent-4" data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small green accent-4" data-tooltip="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small green accent-4" data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Interviews</a></li>
+                <li><a href="#">Podcasts</a></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+      </header>
+
+    <!-- opening para -->
+    <section class="container section scrollspy" id="about">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="https://via.placeholder.com/250" alt="" class="responsive-img circle">
+            </div>
+            <div class="col s12 l8">
+                <h2 class="green-text text-accent-4">Hello.</h2>
+                <p class="flow-text">
+                    I am a journalist, editor, podcaster – with a focus on European and global affairs, women’s rights, indigenous rights, and Green politics.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- articles, interview and podcasts info -->
+    <section class="container section scrollspy" id="photos">
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="dist/assets/img/bgpp-logo-dark-2.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l6 pull-l5 offset-l1">
+                <h2 class="green-text text-accent-4">Big Green Politics Podcast</h2>
+                <p>
+                    Seden Anlar and Julia Lagoutte bring you their environmentalist & feminist angle on global politics news, and interviews with Green thinkers, 
+                    politicians & activists. 
+                </p>
+                <p>
+                    Available on all podcast apps including Itunes, Spotify, Google and on Souncloud.
+                </p>                
+                <p>
+                    Come join the debate! Follow us on Twitter and like us on Facebook.
+                </p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="dist/assets/img/green-wave-podcast-logo.jpg" alt="" class="responsive-img">
+                </div>
+                <div class="col s12 l6 right-align">
+                    <h2 class="green-text text-accent-4">Green Wave</h2>
+                    <p>
+                        This is the Green European Journal’s podcast. The Green European Journal is the European venue for Green ideas and analysis – 
+                        showcasing the best of its articles in audio form.
+                    </p>
+                    <p>
+                        Available on all podcast apps including Itunes, Spotify, and Google.
+                    </p>
+                    <p>
+                        This podcast is produced in collaboration with Seden Anlar.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1">
+                    <img src="dist/assets/img/green-space-logo.jpg" alt="" class="responsive-img">
+                </div>
+            <div class="col s12 l6 pull-l5 offset-l1">
+                <h2 class="green-text text-accent-4">Green Space</h2>
+                <p>
+                    A Podcast about Green ideas. In the run up to the general election, we’re getting to grips with the Green Party of England and Wales’ manifesto – 
+                    ‘If not now, when?’ – with the people who put it together.
+                </p>
+                <p>
+                    This is a space where we can explore the philosophy behind the growing political ecology movement. 
+                    Green Space is produced by Seden Anlar & Julia Lagoutte – in collaboration with the Green Party of England and Wales.
+                </p>
+                <p>
+                    Available on all podcast apps including Itunes, Spotify, and Google. Listen directly here.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+        <img src="dist/assets/img/sunflower-para.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- services / tabs -->
+    <section class="container section scrollspy" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="green-text text-accent-4">What I do...</h2>
+                <p>
+                    I produce Green Wave the Green European Journal‘s podcast, which showcases the best of their articles in audio form.
+                </p>
+                <p>
+                    I am also the co-founder and co-host of the Big Green Politics Podcast, alongside political commentator Seden Anlar. Find it on any podcast app or listen here.
+                </p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#writing" class="green-text text-accent-4">Writing</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#podcasting" class="green-text text-accent-4">Podcasting</a>
+                </li>
+                </ul>
+                <div class="col s12" id="writing">
+                <p class="flow-text green-text text-accent-4">
+                    WRITING, COPY-EDITING, PROOFREADING
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum error pariatur consequuntur voluptatibus ab ea, 
+                    quod commodi vitae illo officia deleniti velit voluptas quibusdam similique non eaque odit? Ex, voluptas.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum error pariatur consequuntur voluptatibus ab ea, 
+                    quod commodi vitae illo officia deleniti velit voluptas quibusdam similique non eaque odit? Ex, voluptas.
+                </p>
+                </div>
+                <div class="col s12" id="podcasting">
+                <p class="flow-text green-text text-accent-4">
+                    PODCASTING
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum error pariatur consequuntur voluptatibus ab ea, 
+                    quod commodi vitae illo officia deleniti velit voluptas quibusdam similique non eaque odit? Ex, voluptas.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum error pariatur consequuntur voluptatibus ab ea, 
+                    quod commodi vitae illo officia deleniti velit voluptas quibusdam similique non eaque odit? Ex, voluptas.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+        <img src="dist/assets/img/river-para.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
+        <div class="row">
+        <div class="col s12 l5">
+            <h2 class="green-text text-accent-4">Get In Touch</h2>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci voluptatum accusamus 
+            rem quidem sequi corporis sapiente harum accusantium voluptas,
+            eos, voluptatibus dolorum, commodi quae. Architecto corporis enim inventore dolorem!
+            </p>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci voluptatum accusamus 
+            rem quidem sequi corporis sapiente harum accusantium voluptas,
+            eos, voluptatibus dolorum, commodi quae. Architecto corporis enim inventore dolorem!
+            </p>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci voluptatum accusamus 
+            rem quidem sequi corporis sapiente harum accusantium voluptas,
+            eos, voluptatibus dolorum, commodi quae. Architecto corporis enim inventore dolorem!
+            </p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <form action="">
+            <div class="input-field">
+                <i class="material-icons prefix green-text text-accent-4">email</i>
+                <input type="email" id="email" required>
+                <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix green-text text-accent-4">message</i>
+                <textarea id="message" class="materialize-textarea" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="date" class="datepicker">
+                <label for="date">Choose a date you need me for...</label>
+            </div>
+            <div class="input-field">
+                <p>Services Required...</p>
+                <p>
+                    <label>
+                        <input type="checkbox">
+                        <span>Writing</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox">
+                        <span>Editing</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox">
+                        <span>Podcasting</span>
+                    </label>
+                </p>
+            </div>
+            <div class="input-field center">
+                <button class="btn green accent-4 waves-effect waves-light">Submit</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+            <h5>Some other stuff...</h5>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci voluptatum accusamus 
+                rem quidem sequi corporis sapiente harum accusantium voluptas,
+                eos, voluptatibus dolorum, commodi quae. Architecto corporis enim inventore dolorem!
+            </p>
+            </div>
+            <div class="col s12 l4 offset-l2 connect">
+            <h5>Connect</h5>
+            <a href="#" class="grey-text text-lighten-3"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="grey-text text-lighten-3"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="grey-text text-lighten-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="grey-text text-lighten-3"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+        <div class="container center">
+            &copy; 2020 Julia Lagoutte
+        </div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+    });
+    </script>
+</body>
+</html>
