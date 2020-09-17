@@ -1,356 +1,346 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/22ad983047.js" crossorigin="anonymous"></script>
+    <!-- iconify -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- favicon and title -->
     <link rel="icon" href="./assets/img/diplodocus_white.ico" type="image/x-icon">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+
     <title>Diplodocus Website</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar-container">
-        <ul class="navbar">
-            <li class="profile"><img src="./assets/img/profile.JPG"></li>
-            <li class="profile-back"><img src="./assets/img/profile_2.jpg"></li>
-            <li class="nav nav-home" data-target=".home">home</li>
-            <li class="nav nav-about" data-target=".about">about</li>
-            <li class="nav nav-projects" data-target=".projects">projects</li>
-            <li class="nav nav-experience" data-target=".experience">experience</li>
-            <li class="nav nav-contact" data-target=".contact">contact</li>
-        </ul>
-    </nav>
-    <main class="main">
-    <!-- Home page -->
-    <header class="home">
-        <h1>harry holden</h1>
-        <h2>junior web developer</h2>
-        <h3>Portfolio Site</h3>
-        <img src="./assets/img/balloon_1.png" id="b1">
-        <img src="./assets/img/balloon_2.png" id="b2">
-        <img src="./assets/img/balloon_3.png" id="b3">
-        <img src="./assets/img/balloon_4.png" id="b4">
-        <img src="./assets/img/balloon_5.png" id="b5">
-        <img src="./assets/img/balloon_6.png" id="b6">
-        <img src="./assets/img/balloon_7.png" id="b7">
-        <img src="./assets/img/balloon_8.png" id="b8">
-
-        <div class="scroll-container">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <span>Scroll Down</span>
+    
+    <!-- navbar -->
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper grey darken-4">
+            <div class="container">
+                <a href="#" class="brand-logo"><img src="./dist/assets/img/logo_blank.png" alt="" class="responsive-img nav-logo"></a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                <li class="nav-link"><a href="#home">Home</a></li>
+                <li class="nav-link"><a href="#experience">Experience</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="#background">Background</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small amber darken-3" data-tooltip="Github">
+                    <i class="fab fa-github"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small amber darken-3" data-tooltip="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small amber darken-3" data-tooltip="Email">
+                    <i class="far fa-envelope"></i>
+                </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Background</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
         </div>
     </header>
-    <hr>
-    <!-- About page -->
-    <section class="about">
-        <h2>about</h2>
-        <ul>
-            <li class="trigger active" data-target="#background">Background</li>
-            <li class="trigger" data-target="#career">Career</li>
-            <li class="trigger" data-target="#interests">Interests</li>
-        </ul>
-        <div class="content active" id="background">
-        <h3>Background</h3>
-            <p>Hello world! My name is Harry, I'm 30 years old and originally from "the north" (of the UK, a little town just north of Manchester called Chorley to be precise). 
-                I currently live in Bristol and have been for the past 7 years; it's a fantastic city on a par with Manchester and has a lot less rain! Prior to Bristol I 
-                gained a masters in Aerospace Engineering at the University of Manchester which enabled me to land a job with Airbus at their Filton site in Bristol, 
-                which should explain the move to the south. My final role in Airbus, which was in the fuel systems modelling and simulation department was the role that made me
-                see the light on what I want from my future career.
-                <br>
-                <br>
-                A large portion of my modelling work within Airbus involved writing code to solve bespoke modelling problems, and it was in doing this type of work I realised
-                I actually love to code (and that I'm not so much interested in aircraft). The problem was that the majority of coding I did at Airbus was within Matlab and I 
-                started to get itchy fingers to explore other coding languages and create a career in tech. To spring board my career into tech I opted to embark on the full 
-                stack web development course at _nology in Bristol. I chose web development as I not only wanted to learn other coding languages but also to have a closer connection 
-                with the product and the people using it, which was something I felt was missing from my work at Airbus. Some would say I'm food motivated but problem solving is 
-                where my heart lies and I hope to see plenty of it in a tech career.
-            </p>
-            </div>
-        <div class="content" id="career">
-            <h3>Career</h3>
-            <p>My career so far has been primarily based within the aerospace industry. Having secured a masters in aerospace engineering from the University of Manchester,
-                I managed to land a job at Airbus and have been working there for the past 7 years. Airbus, for those who don't know, is the largest aircraft manufacturer in
-                Europe which shares, along with its US competitor Boeing, 99% of the aircraft manufacturing market. Airbus is the producer of the best-selling commercial aircraft
-                in existence, the A320, and the largest commercial aircraft that has ever graced the skies, the monster that is the A380. As you can tell from my sales pitch it
-                is an exciting company to work for and getting to see the aircraft up close (from an engineering perspective) really is magnificent. 
-                <br>
-                <br>
-                I started my career at Airbus through their graduate programme working within the landing gear structures department. The scheme duration was 2 years and over that
-                time, I got to explore the company, experience different teams, visit the final assembly lines and flight test operations and work for one of Airbus' many suppliers 
-                or customers (the airlines). My highlight of the scheme was being the engineer making the final checks on the A320neo landing gear before its first flight, 
-                an adrenaline packed experience especially when the aircraft came into land!
-                <br>
-                <br>
-                Post graduate programme Airbus places you in your final role which for me was within the landing gear installation team. This role involved ensuring all landing gear 
-                installation documentation (think Ikea flat-pack installation instructions but for aircraft landing gear) was clear, mistake free and up-to-date. The role also 
-                included a small bit of modelling to ensure gear clearances during the extension and retraction of the gear in flight were acceptable. 
-                From there I moved into the fuel systems domain, which opened up new challenges and delved more into the systems design.
-                <br>
-                <br>
-                Within the fuel systems domain I worked within the modelling and simulation department. Here our job was to model the fuel tank's thermal and spatial environment
-                to support certification (the thermal side) to put it crudely proving to the airworthiness authorities that the aircraft fuel tanks are not likely to explode. The 
-                spatial modelling of the fuel tanks was primarily to support the fuel systems gauging design but also to support almost all areas of fuel systems design. 
-                These two roles heavily involved the use of Matlab and Simulink, and on occasion the old dinosaur that is FORTRAN (which is still incredibly fast at number crunching). 
-                This is where I discovered my joy for coding and is where my Airbus career ends. With rising environmental pressures on the aerospace industry and the hit to air 
-                travel due to Covid-19 those that remain in the industry are likely to be in for a tough ride - I do wish all my Airbus colleagues the best for the future and 
-                leave knowing they are fully capable of weathering the storm. For me though, I've decided to move into a sector whose importance has been seen during this pandemic 
-                and a sector where I think my heart truly lay all along.                
-            </p>
-        </div>
-        <div class="content" id="interests">
-            <h3>Interests</h3>
-            <h4>Allotment</h4>
-            <p>A place of solace after a long hard day's work, a respite from the hustle and bustle of city life, an oasis in the pandemic's lockdown delirium, that is allotment life
-                and what a life it is! Aside from my passion pertaining to computers I've found joy in a non-silicon based and 100% natural hobby that is vegetable growing 
-                (I prefer the term farming of course). I would advise it a hundred times over to anyone, it's great. And yes, I am aware this makes me sound like I'm 60 years 
-                old but I don't care, when you take a bite of some sweetcorn freshly picked and barbequed within 10 minutes of harvesting, that sweet sweet taste will make any 
-                judgements evaporate into the summer air.
-                <br>
-                <br>
-                I have been an allotment owner now for 4 years, growing everything from cabbages to pumpkins (sorry did I mention tomatoes too? always tomatoes...). The trials and 
-                tribulations are never ending but the rewards are exponentially greater. It's a fantastic hobby that not only teaches you patience and perseverance but also drops you 
-                right at the heart of a community of like-minded individuals eager to share growing tips and elbow grease, but more importantly their hard-grown vegetables 
-                (but only if you share yours). It has some incredible benefits for both the body and mind and has been invaluable during the lockdown months. 
-                <br>
-                <br>
-                I've said it already but will do again, try growing something, you won't regret it.</p>
-                <!-- carousel -->
-            <div class="carousel">
-                <!-- images to cycle through -->
-                <div class="slides fade">
-                    <div class="number-text">1 / 10</div>
-                    <img src="./assets/img/allotment_01.jpg">
-                    <div class="caption">The beginning, what a mess...</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">2 / 10</div>
-                    <img src="./assets/img/allotment_02.jpg">
-                    <div class="caption">The clearing</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">3 / 10</div>
-                    <img src="./assets/img/allotment_03.JPG">
-                    <div class="caption">We have beds!</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">4 / 10</div>
-                    <img src="./assets/img/allotment_04.JPG">
-                    <div class="caption">Start of the first season</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">5 / 10</div>
-                    <img src="./assets/img/allotment_05.JPG">
-                    <div class="caption">First season summer</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">6 / 10</div>
-                    <img src="./assets/img/allotment_06.JPG">
-                    <div class="caption">Winter, Garlic is in!</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">7 / 10</div>
-                    <img src="./assets/img/allotment_07.JPG">
-                    <div class="caption">Start of the second season</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">8 / 10</div>
-                    <img src="./assets/img/allotment_08.JPG">
-                    <div class="caption">Corns growing!</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">9 / 10</div>
-                    <img src="./assets/img/allotment_09.JPG">
-                    <div class="caption">Big transformation, third season</div>
-                </div>
-                <div class="slides fade">
-                    <div class="number-text">10 / 10</div>
-                    <img src="./assets/img/allotment_10.JPG">
-                    <div class="caption">Look at all the green!</div>
-                </div>
-                <!--  next and previous buttons -->
-                <a href="" class="prev">&#10094;</a>
-                <a href="" class="next">&#10095;</a>
-            </div>
-            <br>
-            <!-- dots and circles for carousel position-->
-            <div class="dot-container" style="text-align: center;"></div>
-            <h4>Electronics</h4>
-            <p>Returning to the silicon world another hobby I've found interest in is building electronics. I mainly got involved in this to build an environmental sensor
-                and datalogger for my allotment. Whilst half of the hobby involves coding which is fantastic. The other side, the building of the circuits appeals to my engineering
-                mindset and the soldering can be quite calming and strangely therapeutic. I say strangely here as it seems a little odd that it has a calming effect when you're 
-                essentially wielding an almost 400&#176;C hot poker! That aside, it is a rewarding hobby that ties nicely in with my passion for coding and really helps envision 
-                the potential and reach that coding has.
-            </p>
-            <h4>Gaming</h4>
-            <p>My final hobby of course would also be tech related. Gaming, where do I start? Normally I would hide my passion for gaming as in the past it was seen quite negatively 
-                but with the rise of e-sports (now the most viewed "sport" in the world) it feels more comfortable to say I enjoy it. Despite the obvious entertainment factor, 
-                gaming (more precisely online gaming) has the propensity to connect people across large distances, bring them together through a shared purpose and rewards good 
-                team work with a shared joy of success, and of course, loot. Normally I spend my gaming time in the PvP arenas be it Rocket League, Chivalry or sometime in the 
-                distant past Halo 3, as I feel that human element makes everything a little more interesting. I've had many hours of fun playing an orc with oversized shoulders 
-                or a tiny gnome wielding an axe five times the size of himself, but more importantly as a medium it has allowed me to stay connected to friends.</p>
-        </div>
-    </section>
-    <hr>
-    <!-- Projects Page -->
-    <section class="projects">
-        <h2>projects</h2>
-        <div class="card">
-            <img src="./assets/img/cards_01.gif">
-            <div class="card-container">
-                <h4>interactive quiz</h4>
-                <h5>html/css/js</h5>
-                <p>A small project showing a basic grasp of web development languages.</p>
-                <div class="project-links">
-                    <div class="project-btn">
-                        <a href="assets/pages/interactive_quiz/quiz.html"><i class="fas fa-external-link-alt"></i><span>Webpage</span></a>
+
+    <!-- home -->
+    <main>
+        <section class="section scrollspy amber darken-3" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l5 profile-container">
+                        <img src="./dist/assets/img/profile.png" alt="" class="responsive-img profile">
                     </div>
-                    <div class="project-btn">
-                        <a href="https://github.com/Diplodocus-the-Diplodocus-King/Dino_Interactive_Quiz" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
+                    <div class="col s12 l7">
+                        <h1 class="grey-text text-lighten-5 right-align">Harry</h1>
+                        <h1 class="grey-text text-lighten-5 right-align">Holden</h1>
+                        <hr>
+                        <h2 class="right-align">Junior Web Developer</h2>
+                        <h4 class="right-align">Bristol, UK</h4>
+                        <p class="flow-text">
+                            Hi, thanks for visiting.
+                        </p>
+                        <p class="flow-text">
+                            I'm a junior web developer with a background in data science and modelling & simulation.
+                            Eager to work on anything related to tech, I love it!
+                        </p>
+                        <p class="flow-text">
+                            Think I could help you out? <a class="nav-link" href="#contact">Let's work together.</a> 
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- experience -->
+        <section class="section scrollspy grey lighten-5" id="experience">
+            <div class="container">
+                <h2 class="center grey-text text-darken-4 section-title">Experience</h2>
+                <div class="row section">
+                    <div class="col s12 m6 l3 center exp-card">
+                        <span class="tooltip" data-message="HTML5"><span class="iconify" data-icon="logos:html-5" data-inline="false"></span></span>
+                        <span class="tooltip" data-message="CSS3"><span class="iconify" data-icon="logos:css-3" data-inline="false"></span></span>
+                        <span class="tooltip" data-message="JavaScript"><span class="iconify" data-icon="logos:javascript" data-inline="false"></span></span>
+                        <p class="grey-text text-darken-4">Confident in the use of HTML5 , CSS3 and ES6/ES7 JavaScript features</p>
+                    </div>
+                    <div class="col s12 m6 l3 center exp-card">
+                        <span class="tooltip" data-message="Webpack"><span class="iconify" data-icon="logos:webpack" data-inline="false"></span></span>
+                        <span class="tooltip" data-message="NPM"><span class="iconify" data-icon="vscode-icons:file-type-npm" data-inline="false"></span></span>
+                        <p class="grey-text text-darken-4">Knowledgeable of mordern workflows using Webpack and NPM</p>
+                    </div>
+                    <div class="col s12 m6 l3 center exp-card">
+                        <span class="tooltip" data-message="Babel"><span class="iconify" data-icon="vscode-icons:file-type-light-babel2" data-inline="false"></span></span>
+                        <p class="grey-text text-darken-4">Aim to build for browser compatibility using Babel and mobile-first design</p>
+                    </div>
+                    <div class="col s12 m6 l3 center exp-card">
+                        <span class="tooltip" data-message="Firebase"><span class="iconify" data-icon="logos:firebase" data-inline="false"></span></span>
+                        <p class="grey-text text-darken-4">Familiar with the use of Firebase for databasing, authentication and hosting</p>
+                    </div>
+                    <div class="col s12 m6 l4 center exp-card">
+                        <span class="tooltip" data-message="Node.js"><span class="iconify" data-icon="logos:nodejs" data-inline="false"></span></span>
+                        <p class="grey-text text-darken-4">Delved into javascript server-side language using Node.js</p>
+                    </div>
+                    <div class="col s12 m6 l4 center exp-card">
+                        <span class="tooltip" data-message="Bootstrap"><span class="iconify" data-icon="logos:bootstrap" data-inline="false"></span></span>
+                        <span class="tooltip" data-message="Materialize"><span class="iconify" data-icon="logos:materializecss" data-inline="false"></span></span>
+                        <p class="grey-text text-darken-4">Proficient in the use of Bootstrap and Materialize CSS Frameworks to create simple and clean websites quickly</p>
+                    </div>
+                    <div class="col s12 m12 l4 center exp-card">
+                        <span class="tooltip" data-message="Vue.js"><span class="iconify" data-icon="vscode-icons:file-type-vue" data-inline="false"></span></span>
+                        <p class="grey-text text-darken-4">Exploring the capabilities of Vue.js to build single page applications for simplicity and speed</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img/cards_02.png">
-            <div class="card-container">
-                <h4>todo list</h4>
-                <h5>html/css/js</h5>
-                <p>A small project displaying the use of JavaScript event listeners and Bootstrap CSS.</p>
-                <div class="project-links">
-                    <div class="project-btn">
-                        <a href="assets/pages/todo_list/todo.html"><i class="fas fa-external-link-alt"></i><span>Webpage</span></a>
+        </section>
+
+        <!-- projects -->
+        <section class="section scrollspy grey lighten-5" id="projects">
+            <div class="container">
+                <div class="row project-container">
+                    <h2 class="left grey-text text-darken-4 col s12 m12 l12 section-title hide-on-large-only">Projects</h2>
+                    <div class="col s12 l6 preview">
+                        <div class="preview-window">
+                            <img src="./dist/assets/img/browser.png" alt="" class="responsive-img z-depth-3">
+                            <img src="./dist/assets/img/portfolio_original.png" alt="" class="responsive-img preview-img z-depth-3">
+                            <div class="dot-container hide-on-large-only">
+                                <!-- project carousel dots go here -->
+                            </div>
+                            <i class="carousel-arrow-prev fas fa-chevron-circle-left hide-on-large-only"></i>
+                            <i class="carousel-arrow-next fas fa-chevron-circle-right hide-on-large-only"></i>
+                        </div>
+                        <div class="info-window row">
+                            <h3 class="left grey-text text-darken-4 col s8 m8 l8 project-name">Project Name</h3>
+                            <a href="#" class="right-align col s2 m2 l2 grey-text text-darken-4 btn-flat github-link"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+                            <a href="#" class="right-align col s2 m2 l2 grey-text text-darken-4 btn-flat webpage-link"><span class="iconify" data-icon="clarity:cursor-arrow-solid" data-inline="false"></span></a>
+                            <div class="chip-container col s12 m12 l12">
+                                <div class="chip yellow">Javascript</div>
+                                <div class="chip blue">HTML</div>
+                                <div class="chip orange">CSS</div>
+                            </div>
+                            <p class="grey-text text-darken-3 col s12 m12 l12 project-info">
+                                This is my project about... Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Dolorem, quos nesciunt veniam placeat eum labore harum minus quaerat commodi quae, voluptate obcaecati at neque possimus sequi fugiat 
+                                voluptas ipsam ratione.
+                            </p>
+                        </div>
                     </div>
-                    <div class="project-btn">
-                        <a href="https://github.com/Diplodocus-the-Diplodocus-King/todo_list" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img/cards_03.gif">
-            <div class="card-container">
-                <h4>weather app</h4>
-                <h5>html/css/js/api</h5>
-                <p>Project to show the use of APIs within a web application.</p>
-                <div class="project-links">
-                    <div class="project-btn">
-                        <a href="assets/pages/weather_app/weather.html"><i class="fas fa-external-link-alt"></i><span>Webpage</span></a>
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://github.com/Diplodocus-the-Diplodocus-King/weather_app" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img/cards_04.gif">
-            <div class="card-container">
-                <h4>real-time chatroom</h4>
-                <h5>html/css/js/firebase</h5>
-                <p>Project to demonstrate the use of Firebase.</p>
-                <div class="project-links">
-                    <div class="project-btn">
-                        <a href="assets/pages/real_time_chatroom/chat.html"><i class="fas fa-external-link-alt"></i><span>Webpage</span></a>
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://github.com/Diplodocus-the-Diplodocus-King/real-time_chatroom" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
+                    <div class="col s12 l6 hide-on-med-and-down">
+                        <div class="row">
+                            <h2 class="left grey-text text-darken-4 col s12 m12 l12 section-title">Projects</h2>
+                            <form class="col s12 m12 l12 project-search">
+                                <input type="text" name="search" placeholder="Search by name..." class="search">
+                            </form>
+                            <div class="col s12 m12 l12 row project-list">
+                                <!-- projects will be injected here -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img/cards_05.gif">
-            <div class="card-container">
-                <h4>env data plotter</h4>
-                <h5>python/Qt</h5>
-                <p>PyQt application for viewing environmental data.</p>
-                <div class="project-links">
-                    <!-- <div class="project-btn">
-                        <a href="https://github.com/Diplodocus-the-Diplodocus-King/Env_Data_Viewer"><i class="fas fa-external-link-alt"></i><span>Webpage</span></a>
-                    </div> -->
-                    <div class="project-btn only">
-                        <a href="https://github.com/Diplodocus-the-Diplodocus-King/Env_Data_Viewer" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
+        </section>
+
+        <!-- Background -->
+        <section class="section scrollspy grey lighten-5" id="background">
+            <div class="container">
+                <h2 class="center grey-text text-darken-4 section-title">Background</h2>
+                <div class="row">
+                    <div class="col s12 l6 img-container">
+                        <img src="./dist/assets/img/_nology_banner.png" alt="" class="responsive-img">
                     </div>
+                    <article class="col s12 l6">
+                        <h3 class="right-align amber-text text-darken-3">_nology</h3>
+                        <p class="right-align grey-text text-darken-3">
+                            I am at the very beginning of my _nology adventure but it has been a fantastic experience already, lets see what the next few weeks have in store!
+                        </p>
+                    </article>
+                </div>
+                <div class="row">
+                    <div class="col s12 l6 img-container push-l6">
+                        <img src="./dist/assets/img/a380_front.png" alt="" class="responsive-img">
+                    </div>
+                    <article class="col s12 l6 pull-l6">
+                        <h3 class="amber-text text-darken-3">Airbus</h3>
+                        <p class="grey-text text-darken-3">
+                            7 year career working primarily within the fuel systems modelling and simluation department. My role involved working within a team responsible for the 
+                            generation of thermal and spatial models for design, verification & certification (to FAA & EASA CS) of aircraft fuel systems.
+                        </p>
+                    </article>
+                </div>
+                <div class="row">
+                    <div class="col s12 l6 img-container">
+                        <img src="./dist/assets/img/allotments.png" alt="" class="responsive-img">
+                    </div>
+                    <article class="col s12 l6">
+                        <h3 class="right-align amber-text text-darken-3">Hobbies</h3>
+                        <p class="right-align grey-text text-darken-3">
+                            My hobbies are quite polarised between the silicone world and the natural one. I enjoy tinkering with electronics, creating apps 
+                            and playing video games but also I am a proud owner of an allotment where I grow anything I can but honestly it's mostly tomatoes...
+                        </p>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img/cards_06.gif">
-            <div class="card-container">
-                <h4>shopping list app</h4>
-                <h5>html/css/js/firebase</h5>
-                <p>Application creates a shopping list based on what you plan to cook.</p>
-                <div class="project-links">
-                    <div class="project-btn">
-                        <a href="assets/pages/shopping_list_app/shopping.html"><i class="fas fa-external-link-alt"></i><span>Webpage</span></a>
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://github.com/Diplodocus-the-Diplodocus-King/shopping_list_app" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section class="experience">
-        <h2>experience</h2>
-        <div class="exp-card">
-            <span class="tooltip" data-message="HTML5"><i class="fab fa-html5"></i></span>
-            <span class="tooltip" data-message="CSS3"><i class="fab fa-css3-alt"></i></span>
-            <span class="tooltip" data-message="JavaScript"><i class="fab fa-js-square"></i></span>
-            <p>Confident in the use of HTML5 , CSS3 and ES6/ES7 JavaScript features</p>
-        </div>
-        <div class="exp-card">
-            <span class="tooltip" data-message="Node.js"><i class="fab fa-node-js"></i></span>
-            <span class="tooltip" data-message="Webpack"><span class="iconify" data-icon="cib:webpack" data-inline="false"></span></span>
-            <span class="tooltip" data-message="NPM"><i class="fab fa-npm"></i></span>
-            <p>Knowledgeable of mordern workflows using Node.js, Webpack, NPM</p>
-        </div>
-        <div class="exp-card">
-            <span class="tooltip" data-message="Babel"><span class="iconify" data-icon="mdi:babel" data-inline="false"></span></span>
-            <p>Aim to build for browser compatibility using Babel and mobile-first design</p>
-        </div>
-        <div class="exp-card">
-            <span class="tooltip" data-message="Firebase"><span class="iconify" data-icon="simple-icons:firebase" data-inline="false"></span></span>
-            <p>Familiar with the use of Firebase for databasing, authentication and hosting</p>
-        </div>
-        <div class="exp-card">
-            <span class="tooltip" data-message="Bootstrap"><i class="fab fa-bootstrap"></i></span>
-            <p>Proficient in the use of Bootstrap to create simple and clean websites quickly</p>
-        </div>
-        <div class="exp-card">
-            <span class="tooltip" data-message="Vue.js"><i class="fab fa-vuejs"></i></span>
-            <p>Exploring the capabilities of Vue.js to build single page applications for simplicity and speed</p>
-        </div>
-    </section>
-    <hr>
-    <section class="contact">
-        <h2>contact</h2>
-        <div class="contact-content">
-            <a href="mailto:harry.holden@thediplodocus.co.uk" id="email">
-                <i class="far fa-envelope fa-2x"></i>
-            </a>   
-            <a href="https://github.com/Diplodocus-the-Diplodocus-King" target="_blank">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/harry-holden-5b11a274/" target="_blank">
-                <i class="fab fa-linkedin-in fa-2x"></i>
-            </a>
-            <a id="phone">
-                <i class="fas fa-phone fa-2x"></i>
-            </a>
-            <a id="location">
-                <i class="fas fa-map-marker-alt fa-2x"></i>
-            </a>
-            <div class="contact-display"></div>
-            </div>
-        </div>
-    </section>
+        </section>
     </main>
+
+    <!-- contact form -->
+    <section class="section grey lighten-5 scrollspy" id="contact">
+        <div class="container row">
+            <h2 class="center grey-text text-darken-4 section-title">Contact</h2>
+            <div class="col s12 l5">
+                <h2 class="amber-text text-darken-3">Get In Touch</h2>
+                <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci voluptatum accusamus 
+                rem quidem sequi corporis sapiente harum accusantium voluptas,
+                eos, voluptatibus dolorum, commodi quae. Architecto corporis enim inventore dolorem!
+                </p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix grey-text text-darken-4">person</i>
+                        <input type="text" id="name" class="contact-input" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix grey-text text-darken-4">email</i>
+                        <input type="email" id="email" class="contact-input" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix grey-text text-darken-4">message</i>
+                        <textarea id="message" class="materialize-textarea contact-input" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn amber darken-3 waves-effect waves-light" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5 class="grey-text text-lighten-4">Info</h5>
+                    <p class="grey-text text-lighten-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci voluptatum accusamus 
+                        rem quidem sequi corporis sapiente harum accusantium voluptas,
+                        eos, voluptatibus dolorum, commodi quae. Architecto corporis enim inventore dolorem!
+                    </p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                <h5 class="grey-text text-lighten-4">Connect</h5>
+                <ul>
+                    <li>
+                        <a href="#" class="btn-floating btn-small amber darken-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-floating btn-small amber darken-3"">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-floating btn-small amber darken-3">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center">
+                &copy; 2020 Diplodocus
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyC5cTZLZFXdKUvEJQqg8XGi2eMmwtWM0c0",
+        authDomain: "diplodocus-website.firebaseapp.com",
+        databaseURL: "https://diplodocus-website.firebaseio.com",
+        projectId: "diplodocus-website",
+        storageBucket: "diplodocus-website.appspot.com",
+        messagingSenderId: "765860083038",
+        appId: "1:765860083038:web:9be08ce7a9ec9100930bcf",
+        measurementId: "G-LTYPM95RDY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.tabs').tabs();
+    });
+    </script>
+
+    <!-- custom script -->
     <script src="assets/bundle.js"></script>
 </body>
 </html>

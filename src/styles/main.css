@@ -1,0 +1,187 @@
+@import './tooltip.css';
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+.nav-logo{
+    height: 70px;
+    width: 70px;
+    transform: scaleX(-1);
+}
+
+.section{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+#background{
+    height: 130%;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 7rem;
+    margin: 0.5rem auto;
+}
+h2{
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+h4{
+    margin-bottom: 5rem;
+    font-weight: 700;
+}
+h3{
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+p {
+    font-weight: 700;
+}
+.nav-link:hover{
+    background: #ff8f00 !important;
+}
+
+.profile-container{
+    margin-top: 20px;
+}
+
+hr{
+    height: 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+}
+.exp-card{
+    font-size: 1.2rem;
+    height: 200px;
+    margin: 30px 0;
+}
+
+.iconify {
+    margin: 0 5px;
+    font-size: 3rem;
+}
+
+.preview-img{
+    border-radius: 0 0 5px 5px;
+}
+
+.chip-container{
+    display: block;
+}
+
+.chip{
+    font-weight: 500;
+}
+
+.btn-large{
+    border-radius: 15px;
+}
+
+.input-field i{
+    margin-top: 10px;
+}
+
+.preview-window{
+    position: relative;
+}
+
+.carousel-arrow-next, .carousel-arrow-prev{
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.carousel-arrow-prev{
+    left: 1%;
+    top: 50%;
+}
+
+.carousel-arrow-next{
+    right: 1%;
+    top: 50%;
+}
+
+.dot-container{
+    position: absolute;
+    top: 4%;
+    left: 17%;
+}
+
+.dot{
+    cursor: pointer;
+}
+
+.dot:hover{
+    color: #ff8f00 !important;
+}
+
+.carousel-arrow-next:hover, .carousel-arrow-prev:hover{
+    color: #ff8f00;
+}
+
+.search:focus, .contact-input:focus {
+    border-bottom: 1px solid #ff8f00 !important;
+    box-shadow: 0 1px 0 0 #ff8f00 !important;
+  }
+
+footer li{
+    display: inline;
+}
+
+.input-field label.active{
+    color: #ff8f00 !important;
+}
+
+.project-list{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 40%;
+}
+
+.project-list a{
+    font-size: 0.9rem;
+    margin: 10px 0;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.project-name{
+    text-transform: capitalize;
+}
+
+.filtered{
+    display: none;
+}
+
+.project-list a.clicked:hover{
+    color: white !important;
+}
+
+.project-list a:hover{
+    color: #ff8f00 !important;
+}
+
+.info-window a:hover{
+    color: #ff8f00 !important;
+}
+
+.section-title{
+    margin-top: 0;
+}
+
+.info-window{
+    margin-top: 10px;
+}
+
+.project-btn{
+    text-transform: capitalize;
+    letter-spacing: normal;
+}
+
+strong{
+    font-weight: bold;
+}

@@ -1,5 +1,3 @@
-import './styles/tooltip.css';
-
 class Tooltip {
     constructor(){
         this.element = document.querySelectorAll('.tooltip');        
