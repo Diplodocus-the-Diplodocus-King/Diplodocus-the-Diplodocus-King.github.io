@@ -188,6 +188,49 @@ strong{
     font-weight: bold;
 }
 
+
 .info-window a:link{
     background-color: transparent;
+}
+
+.modal-container{
+    margin: 30px;
+}
+
+.skill img{
+    cursor: pointer;
+}
+
+.skill4{
+    animation: floater 10s ease-in-out 0s infinite;
+}
+
+.skill5{
+    animation: floater 7s ease-in-out 0s infinite;
+}
+
+.skill6{
+    animation: floater 5s ease-in-out 0s infinite;
+}
+
+.skill7{
+    animation: floater 6s ease-in-out 0s infinite;
+}
+
+.skill8{
+    animation: floater 11s ease-in-out 0s infinite;
+}
+
+.skill9{
+    animation: floater 9s ease-in-out 0s infinite;
+}
+
+.icon-attribute{
+    font-size: 0.8rem;
+}
+
+@keyframes floater {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
 }

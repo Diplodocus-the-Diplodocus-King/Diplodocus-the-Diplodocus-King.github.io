@@ -59,7 +59,7 @@ class Projects{
                 </a>
             `;
 
-            this.dotContainer.innerHTML += `<i class="material-icons grey-text text-lighten-4 dot" id="dot-${project.title.replace(/\s/g, '-')}">brightness_1</i>`;
+            this.dotContainer.innerHTML += `<i class="material-icons grey-text text-lighten-4 dot" id="dot-${project.title.replace(/\s/g, '-')}">fiber_manual_record</i>`;
         });
         // once done add listeners
         this.addListeners();
