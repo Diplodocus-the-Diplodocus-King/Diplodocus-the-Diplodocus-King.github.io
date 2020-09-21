@@ -339,24 +339,25 @@
                 </p>
             </div>
             <div class="col s12 l5 offset-l2">
-                <form action="">
+                <form name="contact" id="contact-form">
+                     <!-- action="https://formspree.io/xpzozpvl" method="POST"  -->
                     <div class="input-field">
                         <i class="material-icons prefix grey-text text-darken-4">person</i>
-                        <input type="text" id="name" class="contact-input" required>
+                        <input type="text" name="name" id="name" class="contact-input" required>
                         <label for="name">Your Name</label>
                     </div>
                     <div class="input-field">
                         <i class="material-icons prefix grey-text text-darken-4">email</i>
-                        <input type="email" id="email" class="contact-input" required>
+                        <input type="email" name="_replyto" id="email" class="contact-input" required>
                         <label for="email">Your Email</label>
                     </div>
                     <div class="input-field">
                         <i class="material-icons prefix grey-text text-darken-4">message</i>
-                        <textarea id="message" class="materialize-textarea contact-input" required></textarea>
+                        <textarea id="message" name="message" class="materialize-textarea contact-input" required></textarea>
                         <label for="message">Your Message</label>
                     </div>
                     <div class="input-field center">
-                        <button class="btn amber darken-3 waves-effect waves-light" type="submit">Submit</button>
+                        <button class="form-submit btn amber darken-3 waves-effect waves-light" type="submit" value="Send">Submit</button>
                     </div>
                 </form>
             </div>
@@ -450,6 +451,40 @@
         $('.modal').modal();
     });
     </script>
+
+    <!-- <script>
+        function validateForm() {
+
+            // grab form input values
+            const name = document.querySelector('#name').value;
+            const email = document.querySelector('#email').value;
+            const message = document.querySelector('#message').value;
+
+            // name checks
+            if (name.length > 50){
+                alert('Name input is too long, please enter a shorthand version.');
+                return false;
+            } else if (name.match(/(<script>)/g) || name.match(/(<\/script>)/g)){
+                alert('ah ah ah what\'s the magic word?');
+                return false;
+            }
+
+            // email checks
+            if (email.length > 320){
+                alert('Email input is too long, please enter a valid email.');
+                return false;
+            } else if (email.match(/(<script>)/g) || email.match(/(<\/script>)/g)){
+                alert('ah ah ah what\'s the magic word?');
+                return false;
+            }
+
+            // message checks
+            if (message.match(/(<script>)/g) || message.match(/(<\/script>)/g)){
+                alert('ah ah ah what\'s the magic word?');
+                return false;
+            }
+        }
+    </script> -->
 
     <!-- custom script -->
     <script src="./dist/assets/bundle.js"></script>
