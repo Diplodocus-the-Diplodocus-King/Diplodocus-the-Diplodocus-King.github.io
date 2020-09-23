@@ -19,9 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Logo spin
     const navLogo = document.querySelector('.nav-logo');
     navLogo.addEventListener('click', e => {
-    e.preventDefault();
-    navLogo.style.transition = 'transform 1.5s';
-    navLogo.style.transform = 'rotateZ(360deg)';
-});
+        e.preventDefault();
+        if(navLogo.classList.contains('logo-clicked')){
+            navLogo.classList.remove('logo-clicked');
+            navLogo.classList.add('logo-unclicked');
+        } else {
+            navLogo.classList.remove('logo-unclicked');
+            navLogo.classList.add('logo-clicked');  
+        }
+    });
 });
 

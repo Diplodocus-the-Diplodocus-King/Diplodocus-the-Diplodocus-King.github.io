@@ -76,13 +76,16 @@ class Projects{
         const projectBtn = document.querySelectorAll('.project-btn');
         
         projectBtn.forEach(button => {
-            button.addEventListener('mouseover', e => {
+            button.addEventListener('mouseenter', e => {
+
                 // only enable if no project is selected
                 if(this.clicked === false){
-                // grab title
-                const title = e.target.innerText.slice(0, e.target.innerText.indexOf('(')).trim().toLowerCase();
-                // display project
-                this.displayProject(title);
+
+                    // grab title
+                    const title = button.querySelector('strong').innerText.toLowerCase();
+
+                    // display project
+                    this.displayProject(title);
                 }
             });
                 
@@ -90,22 +93,29 @@ class Projects{
                 e.preventDefault();
                 
                 if(this.clicked === false){
+
+                    this.clicked = !this.clicked;
+
                     // select project
                     button.classList.remove('transparent');
                     button.classList.add('amber', 'darken-3', 'clicked');
-                    this.clicked = true;
-
+                    
                     // grab title
-                    const title = e.target.innerText.slice(0, e.target.innerText.indexOf('(')).trim().toLowerCase();
+                    const title = button.querySelector('strong').innerText.toLowerCase();
+
                     // display project
                     this.displayProject(title);
-
+                    
                 } else if(this.clicked === true && document.querySelector('.clicked') == button){
+
+                    this.clicked = !this.clicked;
+
                     // unselect currently selected to enable hover functionality again
                     button.classList.remove('amber', 'darken-3', 'clicked');
                     button.classList.add('transparent');
-                    this.clicked = false;
+
                 } else if (this.clicked === true){
+
                     // unselect currently selected and select new project
                     const selectedProject = document.querySelector('.clicked');
 
@@ -116,7 +126,8 @@ class Projects{
                     button.classList.add('amber', 'darken-3', 'clicked');
 
                     // grab title
-                    const title = e.target.innerText.slice(0, e.target.innerText.indexOf('(')).trim().toLowerCase();
+                    const title = button.querySelector('strong').innerText.toLowerCase();
+
                     // display project
                     this.displayProject(title);
                 }  

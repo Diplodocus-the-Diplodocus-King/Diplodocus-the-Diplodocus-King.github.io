@@ -229,6 +229,20 @@ strong{
     font-size: 0.8rem;
 }
 
+.footer-links a{
+    margin: 0 10px;
+}
+
+.logo-clicked{
+    transition: transform 1.5s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.logo-unclicked{
+    transition: transform 1.5s ease-in-out;
+    transform: rotateY(180deg);
+}
+
 @keyframes floater {
     0%{transform: translateY(0px);}
     50%{transform: translateY(-10px);}
