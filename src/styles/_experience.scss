@@ -1,0 +1,56 @@
+@use 'variables';
+
+#experience{
+    .exp-card{
+        font-size: 1.2rem;
+        height: 200px;
+        margin: 30px 0;
+    }
+    
+    .iconify {
+        margin: 0 5px;
+        font-size: 3rem;
+    }
+
+    .tooltip{
+        position: relative;
+        display: inline-block;
+        cursor: help;
+
+        .tip{
+            visibility: hidden;
+            width: 70px;
+            font-size: 0.7em;
+            background-color: variables.$primary-color;
+            color: variables.$grey-lighten-4;
+            text-align: center;
+            border-radius: 15px;
+            padding: 5px 0;
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            transition: opacity 0.3s;
+    
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                margin-left: -4px;
+                border-width: 4px;
+                transform: rotateZ(0deg);
+                border-style: solid;
+                border-color: transparent;
+                border-top-color: variables.$primary-color;
+            }
+    
+        }
+
+        .active{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    
+}

@@ -1,0 +1,31 @@
+@use 'variables';
+
+header{
+    .nav-logo{
+        width: 70px;
+        transform: scaleX(-1);
+    }
+    
+    #background{
+        height: 130%;
+    }
+    
+    .nav-link:hover{
+        background: variables.$primary-color !important;
+    }
+
+    .iconify {
+        margin: 0 5px;
+        font-size: 3rem;
+    }
+
+    .logo-clicked{
+        transition: transform 1.5s ease-in-out;
+        transform: rotateY(360deg);
+    }
+    
+    .logo-unclicked{
+        transition: transform 1.5s ease-in-out;
+        transform: rotateY(180deg);
+    }
+}

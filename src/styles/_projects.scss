@@ -1,0 +1,135 @@
+@use 'variables';
+
+#projects{
+
+    .preview-window{
+        position: relative;
+
+        .preview-img{
+            border-radius: 0 0 5px 5px;
+            position: relative;
+            top: -5px;
+        }
+
+        .dot-container{
+            position: absolute;
+            top: 4%;
+            left: 17%;
+
+            .dot{
+                cursor: pointer;
+
+                &:hover{
+                    color: variables.$primary-color !important;
+                }
+            }
+        }
+
+        .carousel-arrow-next, .carousel-arrow-prev{
+            position: absolute;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+        
+        .carousel-arrow-prev{
+            left: 1%;
+            top: 50%;
+
+            &:hover{
+                color: variables.$primary-color;
+            }
+        }
+        
+        .carousel-arrow-next{
+            right: 1%;
+            top: 50%;
+
+            &:hover{
+                color: variables.$primary-color;
+            }
+        }
+    }
+
+    .info-window{
+        margin-top: 10px;
+
+        .project-name{
+            text-transform: capitalize;
+        }
+
+        .iconify {
+            margin: 0 5px;
+            font-size: 3rem;
+        }
+
+        .chip-container{
+            display: block;
+    
+            .chip{
+                font-weight: 500;
+            }
+        }
+
+        a{
+            &:hover{
+                color: variables.$primary-color !important;
+            }
+
+            &:link{
+                background-color: transparent;
+            }
+        }
+    }
+
+    .search{
+
+        &:focus{
+            border-bottom: 1px solid variables.$primary-color !important;
+            box-shadow: 0 1px 0 0 variables.$primary-color !important;
+        }
+    }
+
+    .project-list{
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 40%;
+
+        .btn-large{
+            border-radius: 15px;
+        }
+
+        a{
+            font-size: 0.9rem;
+            margin: 10px 0;
+            padding: 5px;
+            line-height: 20px;
+            
+            &:hover{
+                color: variables.$primary-color !important;
+            }
+        }
+
+        .clicked{
+
+            &:hover{
+                color: variables.$grey-lighten-4 !important;
+            }
+            
+        }
+
+        .project-btn{
+            text-transform: capitalize;
+            letter-spacing: normal;
+
+            strong{
+                font-weight: bold;
+            }
+        }
+
+        .filtered{
+            display: none;
+        }
+
+    }
+}
+

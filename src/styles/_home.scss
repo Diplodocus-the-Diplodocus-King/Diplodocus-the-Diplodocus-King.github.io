@@ -1,0 +1,15 @@
+@use 'variables';
+
+#home{
+    .profile-container{
+        margin-top: 20px;
+    }
+    
+    hr{
+        height: 10px;
+        background: variables.$grey-lighten-4;
+        border: none;
+        border-radius: 5px;
+    }
+}
+

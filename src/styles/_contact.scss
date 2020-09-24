@@ -1,0 +1,25 @@
+@use 'variables';
+
+#contact{
+
+    .input-field{ 
+        
+        i{
+            margin-top: 10px;
+        }
+
+        label.active{
+            color: variables.$primary-color !important;
+        }
+    
+        .contact-input{
+    
+            &:focus{
+                border-bottom: 1px solid variables.$primary-color !important;
+                box-shadow: 0 1px 0 0 variables.$primary-color !important;
+            }
+          }
+    }
+}
+
+
