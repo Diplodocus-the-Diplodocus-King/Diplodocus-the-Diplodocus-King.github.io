@@ -18,6 +18,7 @@
 
             .dot{
                 cursor: pointer;
+                font-size: 18px !important;
 
                 &:hover{
                     color: variables.$primary-color !important;

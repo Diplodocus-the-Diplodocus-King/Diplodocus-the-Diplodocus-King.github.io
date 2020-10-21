@@ -91,6 +91,7 @@ header .logo-unclicked {
 }
 #projects .preview-window .dot-container .dot {
   cursor: pointer;
+  font-size: 18px !important;
 }
 #projects .preview-window .dot-container .dot:hover {
   color: #ff8f00 !important;
