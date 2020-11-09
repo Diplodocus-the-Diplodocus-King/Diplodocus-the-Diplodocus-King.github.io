@@ -221,7 +221,9 @@ class Projects{
                     'qt', 'pink',
                     'bootstrap', 'purple',
                     'babel', 'brown',
-                    'materialize', 'teal'
+                    'materialize', 'teal',
+                    'react', 'light-blue',
+                    'redux', 'deep-purple'
                 ]; 
                 
                 project.chips.forEach(chip => {
