@@ -47,15 +47,7 @@ class Projects{
             });
             
             // sort for importance
-            this.data.sort((a, b) => {
-                if (a.importance > b.importance){
-                    return -1;
-                } else if (b.score > a.score){
-                    return 1;
-                } else {
-                    return 0;
-                }
-            });
+            this.data.sort((a, b) => b.importance - a.importance);
 
             // display recipes
             this.displayList();
