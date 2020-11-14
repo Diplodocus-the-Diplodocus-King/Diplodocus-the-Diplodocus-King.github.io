@@ -218,12 +218,13 @@ class Projects{
                     'api', 'green',
                     'firebase', 'red',
                     'python', 'cyan',
-                    'qt', 'pink',
+                    'qt', 'deep-orange',
                     'bootstrap', 'purple',
                     'babel', 'brown',
                     'materialize', 'teal',
                     'react', 'light-blue',
-                    'redux', 'deep-purple'
+                    'redux', 'deep-purple',
+                    'scss', 'pink'
                 ]; 
                 
                 project.chips.forEach(chip => {
