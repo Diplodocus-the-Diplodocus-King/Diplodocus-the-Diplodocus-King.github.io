@@ -145,6 +145,7 @@ header .logo-unclicked {
   overflow: scroll;
   overflow-x: hidden;
   height: 40%;
+  max-height: 300px;
 }
 #projects .project-list .btn-large {
   border-radius: 15px;
