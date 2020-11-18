@@ -224,7 +224,8 @@ class Projects{
                     'materialize', 'teal',
                     'react', 'light-blue',
                     'redux', 'deep-purple',
-                    'scss', 'pink'
+                    'scss', 'pink',
+                    'django', 'teal darken-3',
                 ]; 
                 
                 project.chips.forEach(chip => {
