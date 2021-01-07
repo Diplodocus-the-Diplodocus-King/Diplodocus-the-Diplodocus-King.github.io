@@ -226,6 +226,8 @@ class Projects{
                     'redux', 'deep-purple',
                     'scss', 'pink',
                     'django', 'teal darken-3',
+                    'C++', 'indigo',
+                    'arduino', 'light-green'
                 ]; 
                 
                 project.chips.forEach(chip => {
