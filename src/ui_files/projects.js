@@ -227,7 +227,9 @@ class Projects{
                     'scss', 'pink',
                     'django', 'teal darken-3',
                     'C++', 'indigo',
-                    'arduino', 'light-green'
+                    'arduino', 'light-green',
+                    'hapi', 'green',
+                    'materialui', 'teal',
                 ]; 
                 
                 project.chips.forEach(chip => {
