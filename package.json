@@ -1,7 +1,7 @@
 {
-  "name": "diplodocus_portfolio",
+  "name": "webpack_boiler_plate",
   "version": "1.0.0",
-  "description": "portfolio webpage (2020)",
+  "description": "boiler plate for web development (2020)",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
